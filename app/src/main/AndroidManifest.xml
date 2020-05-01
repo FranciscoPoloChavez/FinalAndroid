@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.finalandroid">
 
     <application
@@ -9,10 +10,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PreventionActivity"></activity>
-        <activity android:name=".GalleryActivity" />
-        <activity android:name=".MapaActivity" />
-        <activity android:name=".InformationActivity" />
+
+        <activity
+            android:name=".PreventionActivity"
+            android:theme="@style/PreventionTheme"
+            ></activity>
+
+        <activity
+            android:name=".GalleryActivity"
+            android:theme="@style/GalleryTheme"
+            />
+
+        <activity
+            android:name=".MapaActivity"
+            android:theme="@style/MapaTheme"
+            />
+
+        <activity
+            android:name=".InformationActivity"
+            android:theme="@style/InformationTheme"
+            />
+
         <activity
             android:name=".SplashScreenActivity"
             android:theme="@style/SplashTheme">
@@ -22,7 +40,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme"
+            />
+
     </application>
 
 </manifest>
