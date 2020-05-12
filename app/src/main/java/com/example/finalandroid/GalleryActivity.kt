@@ -1,5 +1,6 @@
 package com.example.finalandroid
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.LinearLayout
@@ -24,6 +25,11 @@ class GalleryActivity : AppCompatActivity() {
 
         val snapHelper: SnapHelper = LinearSnapHelper()
         snapHelper.attachToRecyclerView(recyclerview)
+
+        backgallery.setOnClickListener{
+            val intent = Intent(this,MainActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 }

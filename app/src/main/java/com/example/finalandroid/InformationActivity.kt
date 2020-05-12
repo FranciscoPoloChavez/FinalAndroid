@@ -16,5 +16,8 @@ class InformationActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+
+
+
     }
 }

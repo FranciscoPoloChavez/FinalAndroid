@@ -20,7 +20,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         botonmapa.setOnClickListener{
-            val intent = Intent1(this,MapaActivity::class.java)
+            //val intent = Intent1(this,MapaActivity::class.java)
+            val intent = Intent1(this,MapsActivity::class.java)
             startActivity(intent)
         }
 
@@ -34,11 +35,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
-
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu,menu)
         return super.onCreateOptionsMenu(menu)
     }
+
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         val id=item.itemId
