@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import java.lang.Exception
+import java.util.*
+import kotlin.concurrent.schedule
 import kotlin.system.measureTimeMillis
 
 class SplashScreenActivity : AppCompatActivity() {
@@ -16,8 +18,10 @@ class SplashScreenActivity : AppCompatActivity() {
             override fun run() {
                 try {
                     //Thread.sleep(measureTimeMillis {90000000000})
-                    val intent = Intent(baseContext, MainActivity::class.java)
-                    startActivity(intent)
+                    Timer("SettingUp", false).schedule(700) {
+                        val intent = Intent(baseContext, MainActivity::class.java)
+                        startActivity(intent)
+                    }
                 }catch (e: Exception){
                     e.printStackTrace()
                 }

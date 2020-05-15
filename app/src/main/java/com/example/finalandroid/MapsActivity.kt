@@ -1,5 +1,6 @@
 package com.example.finalandroid
 
+import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,14 +9,12 @@ import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
-import com.google.android.gms.maps.model.CircleOptions
-import com.google.android.gms.maps.model.LatLng
-import com.google.android.gms.maps.model.MarkerOptions
-import com.google.android.gms.maps.model.PolylineOptions
+import com.google.android.gms.maps.model.*
 
-class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
+class MapsActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarkerClickListener {
 
     private lateinit var mMap: GoogleMap
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,6 +36,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
      */
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
+        mMap.setOnMarkerClickListener(this)
         //mMap.animateCamera(CameraUpdateFactory.zoomTo(10F), 2000, null)
 
         // Add a marker in Sydney and move the camera
@@ -54,14 +54,12 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             )
         )
 
-        mMap.addPolyline(
-            PolylineOptions().add(Tec)
-                .add(Tec).width(8f).color(Color.RED)
-        )
 
-        mMap.addCircle(
-            CircleOptions().center(Tec).radius(500.0).strokeWidth(8f)
-        )
+    }
 
+    override fun onMarkerClick(p0: Marker?): Boolean {
+        val intent = Intent(this,HospitalActivity::class.java)
+        startActivity(intent)
+        return true
     }
 }
