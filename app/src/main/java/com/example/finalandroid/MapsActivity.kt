@@ -40,17 +40,20 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarker
         //mMap.animateCamera(CameraUpdateFactory.zoomTo(10F), 2000, null)
 
         // Add a marker in Sydney and move the camera
-        val Tec = LatLng(19.2836452, -99.1386152)
-        mMap.addMarker(MarkerOptions().position(Tec).title("Tec de Monterrey"))
+        val  hgz = LatLng(19.307486, -99.131113)
+        mMap.addMarker(MarkerOptions().position(hgz).title("Hospital General de la Zona 32"))
 
-        val CostcoPolanco = LatLng(19.44171787, -99.20679374)
-        mMap.addMarker(MarkerOptions().position(CostcoPolanco).title("Costco Polanco"))
+        val medicaSur = LatLng(19.297103, -99.160999)
+        mMap.addMarker(MarkerOptions().position(medicaSur).title("Medica Sur"))
+
+        val iner = LatLng(19.292258, -99.159072)
+        mMap.addMarker(MarkerOptions().position(iner).title("Instituto Nacional de Enfermedades Respiratorias"))
 
         //mMap.moveCamera(CameraUpdateFactory.newLatLng(Tec))
         mMap.animateCamera(
             CameraUpdateFactory.newLatLngZoom(
-                Tec,
-                14f
+                medicaSur,
+                12f
             )
         )
 

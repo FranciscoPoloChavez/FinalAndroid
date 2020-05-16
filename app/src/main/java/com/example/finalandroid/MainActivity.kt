@@ -5,14 +5,18 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
+import com.example.finalandroid.Model.HospitalFirebase
 import kotlinx.android.synthetic.main.activity_main.*
 import android.content.Intent as Intent1
 
 class MainActivity : AppCompatActivity() {
 
+    private val hospitalFirebase : HospitalFirebase = HospitalFirebase()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
 
         botoninformacion.setOnClickListener{
             val intent = Intent1(this,InformationActivity::class.java)
@@ -34,6 +38,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent1(this,PreventionActivity::class.java)
             startActivity(intent)
         }
+        //hospitalFirebase.cargaInfo()
     }
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu,menu)
