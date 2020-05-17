@@ -47,7 +47,7 @@
     </style>
 
     <style name="GaleriaTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <item name="title">"Gallery"</item>
+        <item name="title">"Galeria"</item>
         <item name="titleMarginStart">145dp</item>
         <item name="android:windowBackground">#D8C2F6</item>
         <item name="colorPrimary">#863EED</item>

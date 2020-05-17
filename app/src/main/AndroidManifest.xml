@@ -19,7 +19,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HospitalActivity"></activity>
+        <activity android:name=".AnotherActivity"></activity>
+        <activity android:name=".HospitalActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -47,6 +48,9 @@
         <activity
             android:name=".InformationActivity"
             android:theme="@style/InformationTheme" />
+        <activity
+            android:name=".Galeria"
+            android:theme="@style/GaleriaTheme" />
         <activity
             android:name=".SplashScreenActivity"
             android:theme="@style/SplashTheme">

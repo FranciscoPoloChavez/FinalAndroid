@@ -18,6 +18,7 @@
         android:textColor="#FFFFFF"
         android:textSize="14sp"
         android:textStyle="bold"
+        app:layout_constraintCircleRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
