@@ -64,7 +64,10 @@
                 android:gravity="left"
                 android:textAlignment="gravity"
                 android:layout_marginBottom="12dp"
-                android:text="coronaviruses_are_an_extensive_family_of_viruses_that_can_cause_disease_in_both_animals_and_humans_in_humans_several_coronaviruses_are_known_to_cause_respiratory_infections_that_can_range_from_the_common_cold_to_more_serious_diseases_such_as_middle_east_respiratory_syndrome_mers_and_severe_acute_respiratory_syndrome_sars_the_most_recently_discovered_coronavirus_causes_coronavirus_disease_covid_19"
+                android:text="Coronaviruses are an extensive family of viruses that can cause disease in both animals and humans.
+In humans, several coronaviruses are known to cause respiratory infections that can range from the common cold.
+to more serious diseases such as Middle East respiratory syndrome (MERS) and severe acute respiratory syndrome (SARS).
+The most recently discovered coronavirus causes coronavirus disease COVID-19."
                 android:textSize="19sp" />
 
             <TextView
@@ -90,7 +93,9 @@
                 android:gravity="left"
                 android:textAlignment="gravity"
                 android:layout_marginBottom="12dp"
-                android:text="covid_19_is_the_most_recently_discovered_infectious_disease_caused_by_coronavirus_both_this_new_virus_and_the_disease_it_causes_were_unknown_before_the_outbreak_in_wuhan_china_in_december_2019_currently_covid_19_is_a_pandemic_that_affects_many_countries_around_the_world"
+                android:text="COVID-19 is the most recently discovered infectious disease caused by coronavirus.
+Both this new virus and the disease it causes were unknown before the outbreak in Wuhan, China.
+in December 2019. Currently COVID-19 is a pandemic that affects many countries around the world."
                 android:textSize="19sp" />
 
             <TextView
@@ -116,15 +121,17 @@
                 android:gravity="left"
                 android:textAlignment="gravity"
                 android:layout_marginBottom="12dp"
-                android:text="the_most_common_symptoms_of_covid_19_are_fever_dry_cough_and_tiredness_other_less_frequent_symptoms_that_affect_some_patients_are_aches_and_pains_nasal_congestion_headache_conjunctivitis_sore_throat_diarrhea_loss_of_taste_or_smell_and_skin_rashes_or_color_changes_in_the_fingers_or_toes_these_symptoms_are_usually_mild_and_begin_gradually_some_of_the_infected_people_they_only_have_very_slight_symptoms"
+                android:text="The most common symptoms of COVID-19 are fever, dry cough, and tiredness. Other less frequent symptoms
+that affect some patients are aches and pains, nasal congestion, headache, conjunctivitis,
+sore throat, diarrhea, loss of taste or smell, and skin rashes or color changes in the
+fingers or toes. These symptoms are usually mild and begin gradually. Some of the infected people
+they only have very slight symptoms."
                 android:textSize="19sp" />
 
             <ImageView
                 android:id="@+id/imagensintomas"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_marginBottom="5dp"
-                android:layout_weight="1"
+                android:layout_height="wrap_content"
                 app:srcCompat="@drawable/sintomas" />
 
             <TextView
@@ -136,7 +143,11 @@
                 android:gravity="left"
                 android:textAlignment="gravity"
                 android:layout_marginBottom="12dp"
-                android:text="most_people_about_80_recover_from_the_disease_without_the_need_for_hospital_treatment_about_1_in_5_people_who_get_covid_19_ends_up_having_a_serious_condition_and_experiences_difficulties_to_breathe_the_elderly_and_those_with_previous_medical_conditions_such_as_high_blood_pressure_problems_heart_or_lung_diabetes_or_cancer_are_more_likely_to_have_severe_symptoms_however_any_a_person_can_contract_covid_19_and_become_seriously_ill"
+                android:text="Most people (about 80%) recover from the disease without the need for hospital treatment.
+About 1 in 5 people who get COVID-19 ends up having a serious condition and experiences difficulties
+to breathe. The elderly and those with previous medical conditions such as high blood pressure, problems
+heart or lung, diabetes, or cancer are more likely to have severe symptoms. However, any
+A person can contract COVID-19 and become seriously ill."
                 android:textSize="19sp" />
 
             <TextView
@@ -162,7 +173,15 @@
                 android:gravity="left"
                 android:textAlignment="gravity"
                 android:layout_marginBottom="12dp"
-                android:text="if_you_have_mild_symptoms_such_as_a_mild_cough_or_fever_you_generally_do_not_need_to_seek_medical_attention_stay_home_isolate_yourself_and_watch_your_symptoms_follow_national_guidelines_on_self_isolation_however_if_you_live_in_an_area_with_malaria_or_dengue_it_is_important_that_you_do_not_ignore_fever_seek_medical_help_when_you_go_to_the_health_center_wear_a_mask_if_possible_keep_at_least_a_meter_away_from_other_people_and_do_not_touch_the_surfaces_with_your_hands_in_case_the_sick_be_a_child_help_him_follow_this_advice_seek_medical_attention_immediately_if_you_have_trouble_breathing_or_feel_chest_pain_or_pressure_if_possible_call_your_health_care_provider_in_advance_so_that_they_can_direct_you_to_the_appropriate_health_center"
+                android:text="If you have mild symptoms, such as a mild cough or fever, you generally do not need to seek medical attention.
+Stay home, isolate yourself, and watch your symptoms. Follow national guidelines on self-isolation.
+However, if you live in an area with malaria or dengue, it is important that you do not ignore fever.
+Seek medical help. When you go to the health center wear a mask if possible, keep at least
+a meter away from other people and do not touch the surfaces with your hands. In case the sick
+be a child, help him follow this advice.
+
+Seek medical attention immediately if you have trouble breathing or feel chest pain or pressure.
+If possible, call your health care provider in advance so that they can direct you to the appropriate health center."
                 android:textSize="19sp" />
 
             <TextView
@@ -188,7 +207,15 @@
                 android:gravity="left"
                 android:textAlignment="gravity"
                 android:layout_marginBottom="12dp"
-                android:text="ia_person_can_get_covid_19_from_contact_with_someone_who_is_infected_with_the_virus_the_disease_spreads_mainly_from_person_to_person_through_the_droplets_that_come_out_parting_from_the_nose_or_mouth_of_an_infected_person_when_coughing_sneezing_or_talking_these_droplets_they_are_relatively_heavy_do_not_go_very_far_and_fall_quickly_to_the_ground_a_person_can_contract_the_covid_19_if_you_inhale_the_droplets_from_a_person_infected_with_the_virus_so_it_is_important_keep_at_least_a_meter_away_from_others_these_droplets_can_fall_on_objects_and_surfaces_around_the_person_such_as_tables_knobs_and_railings_so_that_other_people_can_become_infected_if_they_touch_those_objects_or_surfaces_and_then_they_touch_their_eyes_nose_or_mouth_so_it_is_important_to_wash_hands_frequently_with_soap_and_water_or_an_alcohol_based_disinfectant"
+                android:text="A person can get COVID-19 from contact with someone who is infected with the virus.
+The disease spreads mainly from person to person through the droplets that come out
+parting from the nose or mouth of an infected person when coughing, sneezing, or talking. These droplets
+they are relatively heavy, do not go very far and fall quickly to the ground. A person can contract the
+COVID-19 if you inhale the droplets from a person infected with the virus. So it is important
+keep at least a meter away from others. These droplets can fall on objects and
+surfaces around the person, such as tables, knobs, and railings, so that other people can become infected
+if they touch those objects or surfaces and then they touch their eyes, nose or mouth. So it is important to wash
+hands frequently with soap and water or an alcohol-based disinfectant."
                 android:textSize="19sp" />
 
             <ImageView
@@ -221,7 +248,11 @@
                 android:gravity="left"
                 android:textAlignment="gravity"
                 android:layout_marginBottom="12dp"
-                android:text="solation_is_an_important_measure_that_people_with_covid_19_symptoms_take_to_avoid_infecting_others_from_the_community_including_their_relatives_isolation_occurs_when_a_person_who_has_a_fever_cough_or_other_covid_19_symptoms_stays_home_and_does_not_go_to_work_school_or_public_places_you_can_do_it_voluntarily_or_on_the_recommendation_of_your_health_care_provider"
+                android:text="Isolation is an important measure that people with COVID-19 symptoms take to avoid infecting others.
+from the community, including their relatives.
+
+Isolation occurs when a person who has a fever, cough, or other COVID-19 symptoms stays home and does not go
+to work, school or public places. You can do it voluntarily or on the recommendation of your health care provider."
                 android:textSize="19sp" />
 
             <ImageView
@@ -254,7 +285,8 @@
                 android:layout_marginBottom="12dp"
                 android:gravity="left"
                 android:textAlignment="gravity"
-                android:text="the_time_between_exposure_to_covid_19_and_the_time_symptoms_begin_usually_is_around_five_or_six_days_but_can_vary_between_1_and_14_days"
+                android:text="The time between exposure to COVID-19 and the time symptoms begin usually is
+around five or six days, but can vary between 1 and 14 days."
                 android:textSize="19sp" />
 
             <ImageView

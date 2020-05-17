@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         botongallery.setOnClickListener{
-            val intent = Intent1(this,Galeria::class.java)
+            val intent = Intent1(this,GalleryActivity::class.java)
             startActivity(intent)
         }
 
