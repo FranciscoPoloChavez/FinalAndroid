@@ -8,37 +8,63 @@
 
     <Button
         android:id="@+id/botoninformacion"
-        android:layout_width="0dp"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="#E2F6C275"
+        android:ellipsize="none"
+        android:minWidth="110dp"
         android:text="Information"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
         android:id="@+id/botonmapa"
-        android:layout_width="0dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="#E2F6C275"
+        android:ellipsize="middle"
+        android:minWidth="110dp"
         android:text="World Map"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/botoninformacion" />
 
     <Button
         android:id="@+id/botongallery"
-        android:layout_width="0dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Gallery"
+        android:minWidth="110dp"
+        android:backgroundTint="#E2F6C275"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/botonmapa" />
 
     <Button
         android:id="@+id/botonprevention"
-        android:layout_width="0dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Prevention"
+        android:minWidth="110dp"
+        android:backgroundTint="#E2F6C275"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/botongallery" />

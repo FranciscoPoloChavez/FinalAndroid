@@ -5,18 +5,14 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
-import com.example.finalandroid.Model.HospitalFirebase
 import kotlinx.android.synthetic.main.activity_main.*
 import android.content.Intent as Intent1
 
 class MainActivity : AppCompatActivity() {
 
-    private val hospitalFirebase : HospitalFirebase = HospitalFirebase()
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
 
         botoninformacion.setOnClickListener{
             val intent = Intent1(this,InformationActivity::class.java)
@@ -30,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         botongallery.setOnClickListener{
-            val intent = Intent1(this,GalleryActivity::class.java)
+            val intent = Intent1(this,Galeria::class.java)
             startActivity(intent)
         }
 
@@ -38,7 +34,6 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent1(this,PreventionActivity::class.java)
             startActivity(intent)
         }
-        //hospitalFirebase.cargaInfo()
     }
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu,menu)
@@ -51,13 +46,17 @@ class MainActivity : AppCompatActivity() {
 
         if(id==R.id.aboutus)
         {
-            Toast.makeText(this,"Not available: About Us", Toast.LENGTH_LONG).show()
+            Toast.makeText(this,"¡Welcome and get to know the App creators!", Toast.LENGTH_LONG).show()
+            val intent = Intent1(this, GalleryActivity::class.java)
+            startActivity(intent)
         }
+
 
         if(id==R.id.contactus)
         {
-            Toast.makeText(this,"Not available: Contact Us", Toast.LENGTH_LONG).show()
+            Toast.makeText(this,"Private contacts", Toast.LENGTH_LONG).show()
         }
+
 
         return super.onOptionsItemSelected(item)
     }

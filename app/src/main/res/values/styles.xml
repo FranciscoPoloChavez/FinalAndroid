@@ -4,10 +4,8 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="title">"Coronavirus App"</item>
-        <item name="android:windowBackground">#D8C2F6</item>
-        <item name="colorPrimary">#863EED</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">#DC020202</item>
+        <item name="colorPrimary">#DC020202</item>
     </style>
 
     <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
@@ -19,10 +17,8 @@
 
     <style name="InformationTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="title">"Information about Coronavirus"</item>
-        <item name="android:windowBackground">#D8C2F6</item>
-        <item name="colorPrimary">#863EED</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">#E5D8F8</item>
+        <item name="colorPrimary">#050505</item>
     </style>
 
     <style name="MapaTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -42,6 +38,15 @@
     </style>
 
     <style name="GalleryTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="title">"Gallery"</item>
+        <item name="titleMarginStart">145dp</item>
+        <item name="android:windowBackground">#D8C2F6</item>
+        <item name="colorPrimary">#863EED</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="GaleriaTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="title">"Gallery"</item>
         <item name="titleMarginStart">145dp</item>
         <item name="android:windowBackground">#D8C2F6</item>

@@ -15,6 +15,12 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginBottom="16dp"
+        android:ellipsize="none"
+        android:minWidth="110dp"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:backgroundTint="#E2F6C275"
         android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -36,24 +42,227 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/Corona_data"
+                android:id="@+id/Corona_que_es_pregunta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollY="@android:dimen/app_icon_size"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textAlignment="gravity"
+                android:textColor="#000000"
+                android:layout_marginBottom="5dp"
+                android:text="What is a coronavirus?"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/Corona_que_es_respuesta"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scrollY="@android:dimen/app_icon_size"
                 android:scrollbarAlwaysDrawVerticalTrack="true"
                 android:gravity="left"
                 android:textAlignment="gravity"
-                android:text="Un texto es una composición de signos codificados en un sistema de escritura que forma una unidad de sentido.También es una composición de caracteres imprimibles (con grafema) generados por un algoritmo de cifrado que, aunque no tienen sentido para cualquier persona, sí puede ser descifrado por su destinatario original. En otras palabras, un texto es un entramado de signos con una intención comunicativa que adquiere sentido en determinado contexto.Las ideas que comunica un texto están contenidas en lo que se suele denominar «macroproposiciones», unidades estructurales de nivel superior o global, que otorgan coherencia al texto constituyendo su hilo central, el esqueleto estructura
-Un texto es una composición de signos codificados en un sistema de escritura que forma una unidad de sentido.También es una composición de caracteres imprimibles (con grafema) generados por un algoritmo de cifrado que, aunque no tienen sentido para cualquier persona, sí puede ser descifrado por su destinatario original. En otras palabras, un texto es un entramado de signos con una intención comunicativa que adquiere sentido en determinado contexto.Las ideas que comunica un texto están contenidas en lo que se suele denominar «macroproposiciones», unidades estructurales de nivel superior o global, que otorgan coherencia al texto constituyendo su hilo central, el esqueleto estructura"
-                android:textSize="21sp" />
+                android:layout_marginBottom="12dp"
+                android:text="coronaviruses_are_an_extensive_family_of_viruses_that_can_cause_disease_in_both_animals_and_humans_in_humans_several_coronaviruses_are_known_to_cause_respiratory_infections_that_can_range_from_the_common_cold_to_more_serious_diseases_such_as_middle_east_respiratory_syndrome_mers_and_severe_acute_respiratory_syndrome_sars_the_most_recently_discovered_coronavirus_causes_coronavirus_disease_covid_19"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/Covid_que_es_pregunta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollY="@android:dimen/app_icon_size"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="5dp"
+                android:textAlignment="gravity"
+                android:text="What is COVID-19?"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/Covid_que_es_respuesta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollY="@android:dimen/app_icon_size"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:gravity="left"
+                android:textAlignment="gravity"
+                android:layout_marginBottom="12dp"
+                android:text="covid_19_is_the_most_recently_discovered_infectious_disease_caused_by_coronavirus_both_this_new_virus_and_the_disease_it_causes_were_unknown_before_the_outbreak_in_wuhan_china_in_december_2019_currently_covid_19_is_a_pandemic_that_affects_many_countries_around_the_world"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/sintomas_pregunta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollY="@android:dimen/app_icon_size"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textAlignment="gravity"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000000"
+                android:text="What are the symptoms of COVID-19?"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/sintromas-respuesta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollY="@android:dimen/app_icon_size"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:gravity="left"
+                android:textAlignment="gravity"
+                android:layout_marginBottom="12dp"
+                android:text="the_most_common_symptoms_of_covid_19_are_fever_dry_cough_and_tiredness_other_less_frequent_symptoms_that_affect_some_patients_are_aches_and_pains_nasal_congestion_headache_conjunctivitis_sore_throat_diarrhea_loss_of_taste_or_smell_and_skin_rashes_or_color_changes_in_the_fingers_or_toes_these_symptoms_are_usually_mild_and_begin_gradually_some_of_the_infected_people_they_only_have_very_slight_symptoms"
+                android:textSize="19sp" />
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/imagensintomas"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/sintomas" />
+
+            <TextView
+                android:id="@+id/sintromas_respuesta2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollY="@android:dimen/app_icon_size"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:gravity="left"
+                android:textAlignment="gravity"
+                android:layout_marginBottom="12dp"
+                android:text="most_people_about_80_recover_from_the_disease_without_the_need_for_hospital_treatment_about_1_in_5_people_who_get_covid_19_ends_up_having_a_serious_condition_and_experiences_difficulties_to_breathe_the_elderly_and_those_with_previous_medical_conditions_such_as_high_blood_pressure_problems_heart_or_lung_diabetes_or_cancer_are_more_likely_to_have_severe_symptoms_however_any_a_person_can_contract_covid_19_and_become_seriously_ill"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/quehacer_pregunta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollY="@android:dimen/app_icon_size"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="5dp"
+                android:textAlignment="gravity"
+                android:text="What should I do if I have symptoms of COVID-19 and when should I seek medical attention?"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/quedehacer_respuesta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollY="@android:dimen/app_icon_size"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:gravity="left"
+                android:textAlignment="gravity"
+                android:layout_marginBottom="12dp"
+                android:text="if_you_have_mild_symptoms_such_as_a_mild_cough_or_fever_you_generally_do_not_need_to_seek_medical_attention_stay_home_isolate_yourself_and_watch_your_symptoms_follow_national_guidelines_on_self_isolation_however_if_you_live_in_an_area_with_malaria_or_dengue_it_is_important_that_you_do_not_ignore_fever_seek_medical_help_when_you_go_to_the_health_center_wear_a_mask_if_possible_keep_at_least_a_meter_away_from_other_people_and_do_not_touch_the_surfaces_with_your_hands_in_case_the_sick_be_a_child_help_him_follow_this_advice_seek_medical_attention_immediately_if_you_have_trouble_breathing_or_feel_chest_pain_or_pressure_if_possible_call_your_health_care_provider_in_advance_so_that_they_can_direct_you_to_the_appropriate_health_center"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/propagacion_pregunta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollY="@android:dimen/app_icon_size"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textAlignment="gravity"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000000"
+                android:text="How is COVID-19 spread?"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/propagacion_respuesta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollY="@android:dimen/app_icon_size"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:gravity="left"
+                android:textAlignment="gravity"
+                android:layout_marginBottom="12dp"
+                android:text="ia_person_can_get_covid_19_from_contact_with_someone_who_is_infected_with_the_virus_the_disease_spreads_mainly_from_person_to_person_through_the_droplets_that_come_out_parting_from_the_nose_or_mouth_of_an_infected_person_when_coughing_sneezing_or_talking_these_droplets_they_are_relatively_heavy_do_not_go_very_far_and_fall_quickly_to_the_ground_a_person_can_contract_the_covid_19_if_you_inhale_the_droplets_from_a_person_infected_with_the_virus_so_it_is_important_keep_at_least_a_meter_away_from_others_these_droplets_can_fall_on_objects_and_surfaces_around_the_person_such_as_tables_knobs_and_railings_so_that_other_people_can_become_infected_if_they_touch_those_objects_or_surfaces_and_then_they_touch_their_eyes_nose_or_mouth_so_it_is_important_to_wash_hands_frequently_with_soap_and_water_or_an_alcohol_based_disinfectant"
+                android:textSize="19sp" />
+
+            <ImageView
+                android:id="@+id/imagenpropagacion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/coronavirus" />
+                android:layout_marginBottom="5dp"
+                app:srcCompat="@drawable/propagacion" />
+
+            <TextView
+                android:id="@+id/aislarse_pregunta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollY="@android:dimen/app_icon_size"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="5dp"
+                android:textAlignment="gravity"
+                android:text="What does it mean to isolate yourself?"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/aislarse_respuesta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollY="@android:dimen/app_icon_size"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:gravity="left"
+                android:textAlignment="gravity"
+                android:layout_marginBottom="12dp"
+                android:text="solation_is_an_important_measure_that_people_with_covid_19_symptoms_take_to_avoid_infecting_others_from_the_community_including_their_relatives_isolation_occurs_when_a_person_who_has_a_fever_cough_or_other_covid_19_symptoms_stays_home_and_does_not_go_to_work_school_or_public_places_you_can_do_it_voluntarily_or_on_the_recommendation_of_your_health_care_provider"
+                android:textSize="19sp" />
+
+            <ImageView
+                android:id="@+id/imagenasilamiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                app:srcCompat="@drawable/aislamiento" />
+
+            <TextView
+                android:id="@+id/exposicion_pregunta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollY="@android:dimen/app_icon_size"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textAlignment="gravity"
+                android:layout_marginBottom="5dp"
+                android:text="How long does it take between exposure to COVID-19 and the development of symptoms?"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/exposicion_respuesta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollY="@android:dimen/app_icon_size"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:layout_marginBottom="12dp"
+                android:gravity="left"
+                android:textAlignment="gravity"
+                android:text="the_time_between_exposure_to_covid_19_and_the_time_symptoms_begin_usually_is_around_five_or_six_days_but_can_vary_between_1_and_14_days"
+                android:textSize="19sp" />
+
+            <ImageView
+                android:id="@+id/imagenexposicion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/exposicion" />
+
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
