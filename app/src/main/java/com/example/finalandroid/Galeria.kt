@@ -30,6 +30,11 @@ class Galeria : AppCompatActivity() {
                 "Video streaming",
                 "Streaming media is multimedia",
                 R.drawable.sintomas
+            ),
+            IntroSlide(
+                "Covid",
+                "Info",
+                R.drawable.picto1
             )
         )
     )
