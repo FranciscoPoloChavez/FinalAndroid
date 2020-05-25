@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
         if(id==R.id.aboutus)
         {
             Toast.makeText(this,"¡Welcome and get to know the App creators!", Toast.LENGTH_LONG).show()
-            val intent = Intent1(this, GalleryActivity::class.java)
+            val intent = Intent1(this, Us::class.java)
             startActivity(intent)
         }
 

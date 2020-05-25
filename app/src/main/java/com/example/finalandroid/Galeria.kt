@@ -17,24 +17,39 @@ class Galeria : AppCompatActivity() {
     private val introSliderAdapter = IntroSliderAdapter(
         listOf(
             IntroSlide(
-                "Sunlight",
-                "Sunlight is the light",
+                "Sars-Cov-2",
+                "Terms used during the health crisis",
+                R.drawable.picto1
+            ),
+            IntroSlide(
+                "Frequently asked questions",
+                "Most relevant answers about Sars-Cov-2",
+                R.drawable.picto2
+            ),
+            IntroSlide(
+                "Emotions and feelings",
+                "Mental health is important these days, be sure to talk to someone you trust if you feel down",
+                R.drawable.picto3
+            ),
+            IntroSlide(
+                "Ways to help",
+                "We all must do our part to overcome this situation, we all have a hero inside",
+                R.drawable.picto5
+            ),
+            IntroSlide(
+                "The importance of covering your mouth and nose",
+                "The transmission of the virus is through the droplets that we expel when speaking, coughing, sneezing and exhaling",
+                R.drawable.picto4
+            ),
+            IntroSlide(
+                "Stay at home",
+                "Don't risk your life if you don't have the need to leave your home, we will see our friends soon",
                 R.drawable.aislamiento
             ),
             IntroSlide(
-                "Pay online",
-                "Electronic bill payment",
-                R.drawable.proteccion
-            ),
-            IntroSlide(
-                "Video streaming",
-                "Streaming media is multimedia",
-                R.drawable.sintomas
-            ),
-            IntroSlide(
-                "Covid",
-                "Info",
-                R.drawable.picto1
+                "Reduce your risk of infection",
+                "Follow the recommendations of the experts",
+                R.drawable.oms
             )
         )
     )
@@ -57,14 +72,15 @@ class Galeria : AppCompatActivity() {
         buttonNext.setOnClickListener{
             if(introSliderViewPager.currentItem + 1 < introSliderAdapter.itemCount){
                 introSliderViewPager.currentItem += 1
-            }else{
-                Intent(applicationContext, AnotherActivity::class.java).also{
-                    startActivity(it)
-                }
             }
+            //else{
+                //Intent(applicationContext, AnotherActivity::class.java).also{
+                  //  startActivity(it)
+                //}
+            //}
         }
         textSkipIntro.setOnClickListener{
-            Intent(applicationContext, AnotherActivity::class.java).also {
+            Intent(applicationContext, MainActivity::class.java).also {
                 startActivity(it)
             }
         }

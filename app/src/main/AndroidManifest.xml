@@ -52,6 +52,9 @@
             android:name=".Galeria"
             android:theme="@style/GaleriaTheme" />
         <activity
+            android:name=".Us"
+            />
+        <activity
             android:name=".SplashScreenActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
