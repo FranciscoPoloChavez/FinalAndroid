@@ -22,7 +22,7 @@
             android:textAlignment="gravity"
             android:textColor="#FFFFFF"
             android:layout_marginBottom="5dp"
-            android:text="Tecnologico de Monterrey Students"
+            android:text="Estudiantes del Tecnológico de Monterrey"
             android:textSize="25sp" />
 
         <TextView
@@ -33,7 +33,7 @@
             android:textAlignment="gravity"
             android:textColor="#FFFFFF"
             android:layout_marginBottom="20dp"
-            android:text="Telecommunications and electronic systems engineers"
+            android:text="Ingenieros en Telecomunicaciones y Sistemas Electrónicos"
             android:textSize="25sp" />
 
         <TextView
@@ -57,12 +57,6 @@
             android:layout_marginBottom="5dp"
             android:text="Diego García A01336163"
             android:textSize="25sp" />
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            app:srcCompat="@drawable/oms1" />
 
     </LinearLayout>
 

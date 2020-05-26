@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
 
         if(id==R.id.aboutus)
         {
-            Toast.makeText(this,"¡Welcome and get to know the App creators!", Toast.LENGTH_LONG).show()
+            Toast.makeText(this,"¡Bienvenido, conoce a los creadores de la Aplicación!", Toast.LENGTH_LONG).show()
             val intent = Intent1(this, Us::class.java)
             startActivity(intent)
         }
@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
 
         if(id==R.id.contactus)
         {
-            Toast.makeText(this,"Private contacts", Toast.LENGTH_LONG).show()
+            Toast.makeText(this,"A01335458@itesm.mx, A01336163@itesm.mx", Toast.LENGTH_LONG).show()
         }
 
 

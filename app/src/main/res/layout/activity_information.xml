@@ -21,7 +21,7 @@
         android:textSize="14sp"
         android:textStyle="bold"
         android:backgroundTint="#E2F6C275"
-        android:text="Back"
+        android:text="Regresar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -52,7 +52,7 @@
                 android:textAlignment="gravity"
                 android:textColor="#000000"
                 android:layout_marginBottom="5dp"
-                android:text="What is a coronavirus?"
+                android:text="¿Qué es un coronavirus?"
                 android:textSize="25sp" />
 
             <TextView
@@ -64,10 +64,10 @@
                 android:gravity="left"
                 android:textAlignment="gravity"
                 android:layout_marginBottom="12dp"
-                android:text="Coronaviruses are an extensive family of viruses that can cause disease in both animals and humans.
-In humans, several coronaviruses are known to cause respiratory infections that can range from the common cold.
-to more serious diseases such as Middle East respiratory syndrome (MERS) and severe acute respiratory syndrome (SARS).
-The most recently discovered coronavirus causes coronavirus disease COVID-19."
+                android:text="Los coronavirus son una extensa familia de virus que pueden causar enfermedades tanto en animales como en humanos.
+En los humanos, se sabe que varios coronavirus causan infecciones respiratorias que pueden ir desde el resfriado común
+hasta enfermedades más graves como el síndrome respiratorio de Oriente Medio (MERS) y el síndrome respiratorio agudo severo (SRAS).
+El coronavirus que se ha descubierto más recientemente causa la enfermedad por coronavirus COVID-19."
                 android:textSize="19sp" />
 
             <TextView
@@ -81,7 +81,7 @@ The most recently discovered coronavirus causes coronavirus disease COVID-19."
                 android:textColor="#000000"
                 android:layout_marginBottom="5dp"
                 android:textAlignment="gravity"
-                android:text="What is COVID-19?"
+                android:text="¿Qué es la COVID-19?"
                 android:textSize="25sp" />
 
             <TextView
@@ -93,9 +93,10 @@ The most recently discovered coronavirus causes coronavirus disease COVID-19."
                 android:gravity="left"
                 android:textAlignment="gravity"
                 android:layout_marginBottom="12dp"
-                android:text="COVID-19 is the most recently discovered infectious disease caused by coronavirus.
-Both this new virus and the disease it causes were unknown before the outbreak in Wuhan, China.
-in December 2019. Currently COVID-19 is a pandemic that affects many countries around the world."
+                android:text="La COVID-19 es la enfermedad infecciosa causada por el coronavirus que se ha descubierto más recientemente.
+                Tanto este nuevo virus como la enfermedad que provoca eran desconocidos antes de que estallara el brote en Wuhan (China)
+                en diciembre de 2019. Actualmente la COVID-19 es una pandemia que afecta a muchos países de todo el mundo.
+                "
                 android:textSize="19sp" />
 
             <TextView
@@ -109,7 +110,7 @@ in December 2019. Currently COVID-19 is a pandemic that affects many countries a
                 android:textAlignment="gravity"
                 android:layout_marginBottom="5dp"
                 android:textColor="#000000"
-                android:text="What are the symptoms of COVID-19?"
+                android:text="¿Cuáles son los síntomas de la COVID-19?"
                 android:textSize="25sp" />
 
             <TextView
@@ -121,11 +122,11 @@ in December 2019. Currently COVID-19 is a pandemic that affects many countries a
                 android:gravity="left"
                 android:textAlignment="gravity"
                 android:layout_marginBottom="12dp"
-                android:text="The most common symptoms of COVID-19 are fever, dry cough, and tiredness. Other less frequent symptoms
-that affect some patients are aches and pains, nasal congestion, headache, conjunctivitis,
-sore throat, diarrhea, loss of taste or smell, and skin rashes or color changes in the
-fingers or toes. These symptoms are usually mild and begin gradually. Some of the infected people
-they only have very slight symptoms."
+                android:text="Los síntomas más habituales de la COVID-19 son la fiebre, la tos seca y el cansancio. Otros síntomas menos frecuentes
+que afectan a algunos pacientes son los dolores y molestias, la congestión nasal, el dolor de cabeza, la conjuntivitis,
+el dolor de garganta, la diarrea, la pérdida del gusto o el olfato y las erupciones cutáneas o cambios de color en los
+dedos de las manos o los pies. Estos síntomas suelen ser leves y comienzan gradualmente. Algunas de las personas infectadas
+solo presentan síntomas levísimos."
                 android:textSize="19sp" />
 
             <ImageView
@@ -144,11 +145,11 @@ they only have very slight symptoms."
                 android:gravity="left"
                 android:textAlignment="gravity"
                 android:layout_marginBottom="12dp"
-                android:text="Most people (about 80%) recover from the disease without the need for hospital treatment.
-About 1 in 5 people who get COVID-19 ends up having a serious condition and experiences difficulties
-to breathe. The elderly and those with previous medical conditions such as high blood pressure, problems
-heart or lung, diabetes, or cancer are more likely to have severe symptoms. However, any
-A person can contract COVID-19 and become seriously ill."
+                android:text="La mayoría de las personas (alrededor del 80%) se recuperan de la enfermedad sin necesidad de tratamiento hospitalario.
+Alrededor de 1 de cada 5 personas que contraen la COVID-19 acaba presentando un cuadro grave y experimenta dificultades
+para respirar. Las personas mayores y las que padecen afecciones médicas previas como hipertensión arterial, problemas
+cardiacos o pulmonares, diabetes o cáncer tienen más probabilidades de presentar cuadros graves. Sin embargo, cualquier
+persona puede contraer la COVID-19 y caer gravemente enferma."
                 android:textSize="19sp" />
 
             <TextView
@@ -162,7 +163,7 @@ A person can contract COVID-19 and become seriously ill."
                 android:textColor="#000000"
                 android:layout_marginBottom="5dp"
                 android:textAlignment="gravity"
-                android:text="What should I do if I have symptoms of COVID-19 and when should I seek medical attention?"
+                android:text="¿Qué debo hacer si tengo síntomas de COVID-19 y cuándo he de buscar atención médica?"
                 android:textSize="25sp" />
 
             <TextView
@@ -174,15 +175,15 @@ A person can contract COVID-19 and become seriously ill."
                 android:gravity="left"
                 android:textAlignment="gravity"
                 android:layout_marginBottom="12dp"
-                android:text="If you have mild symptoms, such as a mild cough or fever, you generally do not need to seek medical attention.
-Stay home, isolate yourself, and watch your symptoms. Follow national guidelines on self-isolation.
-However, if you live in an area with malaria or dengue, it is important that you do not ignore fever.
-Seek medical help. When you go to the health center wear a mask if possible, keep at least
-a meter away from other people and do not touch the surfaces with your hands. In case the sick
-be a child, help him follow this advice.
+                android:text="Si tiene síntomas leves, como tos o fiebre leves, generalmente no es necesario que busque atención médica.
+Quédese en casa, aíslese y vigile sus síntomas. Siga las orientaciones nacionales sobre el autoaislamiento.
+Sin embargo, si vive en una zona con paludismo (malaria) o dengue, es importante que no ignore la fiebre.
+Busque ayuda médica. Cuando acuda al centro de salud lleve mascarilla si es posible, manténgase al menos a
+un metro de distancia de las demás personas y no toque las superficies con las manos. En caso de que el enfermo
+sea un niño, ayúdelo a seguir este consejo.
 
-Seek medical attention immediately if you have trouble breathing or feel chest pain or pressure.
-If possible, call your health care provider in advance so that they can direct you to the appropriate health center."
+Busque inmediatamente atención médica si tiene dificultad para respirar o siente dolor o presión en el pecho.
+Si es posible, llame a su dispensador de atención de la salud con antelación para que pueda dirigirlo hacia el centro de salud adecuado."
                 android:textSize="19sp" />
 
             <TextView
@@ -196,7 +197,7 @@ If possible, call your health care provider in advance so that they can direct y
                 android:textAlignment="gravity"
                 android:layout_marginBottom="5dp"
                 android:textColor="#000000"
-                android:text="How is COVID-19 spread?"
+                android:text="¿Cómo se propaga la COVID-19?"
                 android:textSize="25sp" />
 
             <TextView
@@ -208,15 +209,15 @@ If possible, call your health care provider in advance so that they can direct y
                 android:gravity="left"
                 android:textAlignment="gravity"
                 android:layout_marginBottom="12dp"
-                android:text="A person can get COVID-19 from contact with someone who is infected with the virus.
-The disease spreads mainly from person to person through the droplets that come out
-parting from the nose or mouth of an infected person when coughing, sneezing, or talking. These droplets
-they are relatively heavy, do not go very far and fall quickly to the ground. A person can contract the
-COVID-19 if you inhale the droplets from a person infected with the virus. So it is important
-keep at least a meter away from others. These droplets can fall on objects and
-surfaces around the person, such as tables, knobs, and railings, so that other people can become infected
-if they touch those objects or surfaces and then they touch their eyes, nose or mouth. So it is important to wash
-hands frequently with soap and water or an alcohol-based disinfectant."
+                android:text="Una persona puede contraer la COVID-19 por contacto con otra que esté infectada por el virus.
+La enfermedad se propaga principalmente de persona a persona a través de las gotículas que salen
+despedidas de la nariz o la boca de una persona infectada al toser, estornudar o hablar. Estas gotículas
+son relativamente pesadas, no llegan muy lejos y caen rápidamente al suelo. Una persona puede contraer la
+COVID-19 si inhala las gotículas procedentes de una persona infectada por el virus. Por eso es importante
+mantenerse al menos a un metro de distancia de los demás. Estas gotículas pueden caer sobre los objetos y
+superficies que rodean a la persona, como mesas, pomos y barandillas, de modo que otras personas pueden infectarse
+si tocan esos objetos o superficies y luego se tocan los ojos, la nariz o la boca. Por ello es importante lavarse
+las manos frecuentemente con agua y jabón o con un desinfectante a base de alcohol. "
                 android:textSize="19sp" />
 
             <ImageView
@@ -237,7 +238,7 @@ hands frequently with soap and water or an alcohol-based disinfectant."
                 android:textColor="#000000"
                 android:layout_marginBottom="5dp"
                 android:textAlignment="gravity"
-                android:text="What does it mean to isolate yourself?"
+                android:text="¿Qué significa aislarse?"
                 android:textSize="25sp" />
 
             <TextView
@@ -249,11 +250,11 @@ hands frequently with soap and water or an alcohol-based disinfectant."
                 android:gravity="left"
                 android:textAlignment="gravity"
                 android:layout_marginBottom="12dp"
-                android:text="Isolation is an important measure that people with COVID-19 symptoms take to avoid infecting others.
-from the community, including their relatives.
+                android:text="El aislamiento es una medida importante que adoptan las personas con síntomas de COVID-19 para evitar infectar a otras personas
+de la comunidad, incluidos sus familiares.
 
-Isolation occurs when a person who has a fever, cough, or other COVID-19 symptoms stays home and does not go
-to work, school or public places. You can do it voluntarily or on the recommendation of your health care provider."
+El aislamiento se produce cuando una persona que tiene fiebre, tos u otros síntomas de COVID-19 se queda en casa y no va
+al trabajo, a la escuela o a lugares públicos. Lo puede hacer voluntariamente o por recomendación de su dispensador de atención de salud."
                 android:textSize="19sp" />
 
             <ImageView
@@ -274,7 +275,7 @@ to work, school or public places. You can do it voluntarily or on the recommenda
                 android:textColor="#000000"
                 android:textAlignment="gravity"
                 android:layout_marginBottom="5dp"
-                android:text="How long does it take between exposure to COVID-19 and the development of symptoms?"
+                android:text="¿Cuánto tiempo transcurre entre la exposición a la COVID-19 y el desarrollo de síntomas?"
                 android:textSize="25sp" />
 
             <TextView
@@ -286,8 +287,8 @@ to work, school or public places. You can do it voluntarily or on the recommenda
                 android:layout_marginBottom="12dp"
                 android:gravity="left"
                 android:textAlignment="gravity"
-                android:text="The time between exposure to COVID-19 and the time symptoms begin usually is
-around five or six days, but can vary between 1 and 14 days."
+                android:text="El tiempo que transcurre entre la exposición a la COVID-19 y el momento en que comienzan los síntomas suele ser de
+alrededor de cinco o seis días, pero puede variar entre 1 y 14 días."
                 android:textSize="19sp" />
 
             <ImageView
@@ -308,7 +309,7 @@ around five or six days, but can vary between 1 and 14 days."
                 android:textColor="#000000"
                 android:textAlignment="gravity"
                 android:layout_marginBottom="5dp"
-                android:text="Source of Information: OMS"
+                android:text="Fuente de consulta: OMS"
                 android:textSize="25sp" />
 
             <TextView
@@ -320,7 +321,9 @@ around five or six days, but can vary between 1 and 14 days."
                 android:gravity="left"
                 android:textAlignment="gravity"
                 android:layout_marginBottom="12dp"
-                android:text="The World Health Organization (WHO) is a specialized agency of the United Nations responsible for international public health. The WHO Constitution, which establishes the agency's governing structure and principles, states its main objective as the attainment by all peoples of the highest possible level of health."
+                android:text="La Organización Mundial de la Salud (OMS) es el organismo de la Organización de las Naciones Unidas (ONU)
+especializado en gestionar políticas de prevención, promoción e intervención a nivel mundial en la salud, definida en su Constitución
+como un estado de completo bienestar físico, mental y social, y no solamente como la ausencia de afecciones o enfermedades."
                 android:textSize="19sp" />
 
             <ImageView

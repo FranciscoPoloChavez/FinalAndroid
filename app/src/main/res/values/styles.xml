@@ -16,13 +16,13 @@
     </style>
 
     <style name="InformationTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="title">"Information about Coronavirus"</item>
+        <item name="title">"Información acerca del Coronavirus"</item>
         <item name="android:windowBackground">#E5D8F8</item>
         <item name="colorPrimary">#9AE2EC</item>
     </style>
 
     <style name="MapaTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="title">"Worldwide Map Coronavirus"</item>
+        <item name="title">"Hospitales cercanos que atienden el Coronavirus"</item>
         <item name="android:windowBackground">#D8C2F6</item>
         <item name="colorPrimary">#863EED</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -56,7 +56,7 @@
     </style>
 
     <style name="UsTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <item name="title">"About Us"</item>
+        <item name="title">"Acerca de nosotros"</item>
         <item name="titleMarginStart">145dp</item>
     </style>
 

@@ -18,37 +18,37 @@ class Galeria : AppCompatActivity() {
         listOf(
             IntroSlide(
                 "Sars-Cov-2",
-                "Terms used during the health crisis",
+                "Términos usados durante la crisis de salud",
                 R.drawable.picto1
             ),
             IntroSlide(
-                "Frequently asked questions",
-                "Most relevant answers about Sars-Cov-2",
+                "Preguntas más frecuentes",
+                "Respuestas más relevantes acerca de Sars-Cov-2",
                 R.drawable.picto2
             ),
             IntroSlide(
-                "Emotions and feelings",
-                "Mental health is important these days, be sure to talk to someone you trust if you feel down",
+                "Emociones y sentimientos",
+                "La salud mental es muy importante hoy en día, asegurate de hablar con alguien de tu confianza cuando te sientas decaído",
                 R.drawable.picto3
             ),
             IntroSlide(
-                "Ways to help",
-                "We all must do our part to overcome this situation, we all have a hero inside",
+                "Maneras de ayudar",
+                "Todos debemos poner de nuestra parte para sobrepasar esta situación, todos llevamos un heroe dentro",
                 R.drawable.picto5
             ),
             IntroSlide(
-                "The importance of covering your mouth and nose",
-                "The transmission of the virus is through the droplets that we expel when speaking, coughing, sneezing and exhaling",
+                "La importancia de cubrirse nariz y boca",
+                "La transmisión del virus es mediante las gotitas que expulsamos al hablar, toser, estornudar y exhalar",
                 R.drawable.picto4
             ),
             IntroSlide(
-                "Stay at home",
-                "Don't risk your life if you don't have the need to leave your home, we will see our friends soon",
+                "Quedate en casa",
+                "No arriesgues tu vida si no tienes la necesidad de dejar tu hogar, pronto volveremos a la normalidad",
                 R.drawable.aislamiento
             ),
             IntroSlide(
-                "Reduce your risk of infection",
-                "Follow the recommendations of the experts",
+                "Reduce el riesgo de infección",
+                "Sigue las recomendaciones de los expertos",
                 R.drawable.oms
             )
         )

@@ -4,12 +4,12 @@
 
     <item
         android:id="@+id/aboutus"
-        android:title="About Us"
+        android:title="Sobre nosotros"
     />
 
     <item
         android:id="@+id/contactus"
-        android:title="Contact Us"
+        android:title="Contacto"
     />
 
 </menu>

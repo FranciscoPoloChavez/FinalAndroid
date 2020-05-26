@@ -4,7 +4,7 @@
 
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="next">next</string>
+    <string name="next">Siguiente</string>
     <string name="skip_intro">skip_intro</string>
-    <string name="back">Return</string>
+    <string name="back">Regresar</string>
 </resources>
