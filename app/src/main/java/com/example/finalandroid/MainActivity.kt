@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
 
         if(id==R.id.contactus)
         {
-            Toast.makeText(this,"A01335458@itesm.mx, A01336163@itesm.mx", Toast.LENGTH_LONG).show()
+            Toast.makeText(this,"Francisco: A01335458@itesm.mx,      Diego: A01336163@itesm.mx", Toast.LENGTH_LONG).show()
         }
 
 
