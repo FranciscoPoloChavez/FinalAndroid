@@ -14,7 +14,7 @@
         android:backgroundTint="#E2F6C275"
         android:ellipsize="none"
         android:minWidth="110dp"
-        android:text="Información"
+        android:text="Pito"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
         android:textStyle="bold"
