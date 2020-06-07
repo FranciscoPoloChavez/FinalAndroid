@@ -1,7 +1,7 @@
 package com.example.finalandroid.Model
 
-class ChatMessage(
-    var isImage: Boolean,
-    var isMine: Boolean,
-    var content: String
-)
+data class ChatMessage(val chat: String? = "", val user: String? = "") {
+    val content: CharSequence? = null
+    val isImage: Boolean = false
+    val isMine: Boolean = false
+}

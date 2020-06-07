@@ -7,6 +7,9 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.TextView
 import android.widget.Toast
+import android.util.Log
+import com.firebase.ui.database.FirebaseRecyclerAdapter
+import com.firebase.ui.database.FirebaseRecyclerOptions
 import com.example.finalandroid.Model.ChatMessage
 import com.example.finalandroid.R
 
@@ -16,7 +19,7 @@ class ChatMessageAdapter(
 ) : ArrayAdapter<ChatMessage?>(context, R.layout.user_query_layout, data!!) {
     override fun getItemViewType(position: Int): Int {
         val item = getItem(position)
-        return if (item!!.isMine && !item.isImage) {
+        return if (item!!.isMine && !!item.isImage) {
             MY_MESSAGE
         } else {
             BOT_MESSAGE

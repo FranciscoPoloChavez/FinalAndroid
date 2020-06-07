@@ -1,5 +1,11 @@
 package com.example.finalandroid
 
+import ai.api.AIConfiguration.SupportedLanguages.English
+import ai.api.android.AIConfiguration
+import ai.api.AIConfiguration.SupportedLanguages
+import ai.api.AIConfiguration.SupportedLanguages.Spanish
+import ai.api.android.AIDataService
+import ai.api.android.AIService
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,146 +16,130 @@ import android.widget.EditText
 import android.widget.ImageView
 import android.widget.ListView
 import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.finalandroid.Adapter.ChatMessageAdapter
+import com.example.finalandroid.Model.ChatAdapter
 import com.example.finalandroid.Model.ChatMessage
+import com.example.finalandroid.Model.MainPresenter
+import com.firebase.ui.database.FirebaseRecyclerOptions
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_main.*
+import androidx.recyclerview.widget.RecyclerView.LayoutManager
+import kotlinx.android.synthetic.main.activity_gallery.*
+import kotlinx.android.synthetic.main.activity_gallery.view.*
 import kotlinx.android.synthetic.main.activity_prevention.*
+import kotlinx.android.synthetic.main.activity_us.view.*
 import org.alicebot.ab.*
 import java.io.*
 import java.util.ArrayList
 
-abstract class PreventionActivity : AppCompatActivity() {
+class PreventionActivity : AppCompatActivity(), MainContract.View {
 
-    var listView: ListView? = null
-    var alistView = listView    //opcion
-    var btnSend: FloatingActionButton? = null
-    var abtnSend = btnSend  //opcion
-    var edtTextMsg: EditText? = null
-    var aedtTextMsg = edtTextMsg    //opcion
-    var imageView: ImageView? = null
-    private var bot: Bot? = null
-    private var adapter: ChatMessageAdapter? = null
+    lateinit var adapter: ChatAdapter
+    lateinit var ref: DatabaseReference
+    lateinit var aiService: AIService
+    lateinit var aiDataAIService: AIDataService
+    var user: String? = null
+
+    lateinit var mPresenter : MainContract.Presenter
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_prevention)
-        alistView = findViewById(R.id.listView) //Original : listView = findViewById(R.id.listView)
-        abtnSend = findViewById(R.id.btnSend)    //Original: btnSend = findViewById(R.id.btnSend)
-        aedtTextMsg = findViewById(R.id.editTextMsg) //Original : edtTextMsg = findViewById(R.id.editTextMsg)
-        imageView = findViewById(R.id.imageView)
-        adapter = ChatMessageAdapter(this, ArrayList())
-        listView?.setAdapter(adapter)    //Original: listView.setAdapter(adapter)
-        btnSend?.setOnClickListener(View.OnClickListener {   //Original btnSend.setOnClickListener(View.OnClickListener {
-            val message = edtTextMsg?.getText().toString()       //Orginial: val message = edtTextMsg.getText().toString()
-            val response =
-                chat!!.multisentenceRespond(edtTextMsg?.getText().toString())       //Original: chat!!.multisentenceRespond(edtTextMsg.getText().toString())
-            if (TextUtils.isEmpty(message)) {
-                Toast.makeText(
-                    this@PreventionActivity,
-                    "Please enter a query",
-                    Toast.LENGTH_SHORT
-                ).show()
-                return@OnClickListener
-            }
-            sendMessage(message)
-            botsReply(response)
+        initPresenter()
 
-            //clear editttext
-            edtTextMsg?.setText("")      //Original: edtTextMsg.setText("")
-            listView?.setSelection(adapter!!.count - 1) //Original: listView.setSelection(adapter!!.count - 1)
+        //rvChat.setHasFixedSize(true)
+
+        //intento
+        //rvChat.recyclerview.setHasFixedSize(true)
+        //rvChat.recyclerview.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+        //intento
+
+        //val layoutManager = LinearLayoutManager(this)
+        //layoutManager.stackFromEnd = true
+        //rvChat.layoutManager = layoutManager
+
+        //intento
+        //val recy = findViewById<View>(R.id.rvChat) as RecyclerView
+//guia
+        /*
+        binding.recyclerView.setHasFixedSize(true)
+        binding.recyclerView.layoutManager = LinearLayoutManager(this ,LinearLayoutManager.VERTICAL ,false)
+        binding.recyclerView.adapter = customAdapter(this ,getList())
+         */
+//guia
+        //nuestro
+
+        ref.keepSynced(true)
+
+        btnSend.setOnClickListener {
+            val message = edChat.text.toString()
+            if (message != "") {
+                mPresenter.sendMessage(message)
+            } else {
+                aiService.startListening()
+                Toast.makeText(applicationContext, "Enter message first", Toast.LENGTH_SHORT).show()
+            }
+            edChat.setText("")
+        }
+
+        val options = FirebaseRecyclerOptions.Builder<ChatMessage>()
+            .setQuery(ref.child("chat"), ChatMessage::class.java)
+            .build()
+
+        adapter = ChatAdapter(options,user)
+
+        //adapter = ChatAdapter(options)
+
+        //rvChat.recyclerview.adapter = adapter
+
+        //rvChat.adapter = adapter
+
+        adapter.registerAdapterDataObserver(object : RecyclerView.AdapterDataObserver() {
+            override fun onItemRangeInserted(positionStart: Int, itemCount: Int) {
+                super.onItemRangeInserted(positionStart, itemCount)
+
+                val msgCount = adapter.itemCount
+
+                //Intento de cambio nosotros
+                //val lastVisiblePosition = recyclerview.findViewHolderForLayoutPosition(5)
+
+                //Original
+                //val lastVisiblePosition = layoutManager.findLastCompletelyVisibleItemPosition()
+
+                //if (lastVisiblePosition == -1 || positionStart >= msgCount - 1 && lastVisiblePosition == positionStart - 1) {
+                  //  rvChat.scrollToPosition(positionStart)
+                //}
+            }
         })
 
-        //
-        /*
-        Dexter.vithActivity(this)
-                .withPermissions(
-                    Manifest.permission.WRITE_EXTERNAL_STORAGE,
-                    Manifest.permission.READ_EXTERNAL_STORAGE)
-                .withListener(new MultiplePermissionsListener()){
-                    @Override
-                    public void onPermissionsChecked(MultiplePermissionsReport report){
-                        if(report.areAllPermissionsGranted()){
-                            custom();
-                            Toast.makeText(PreventionActivity.this, "Permission Granted", Toast.LENGTH_SHORT).show();
-                        }
-                        if(report.isAnyPermissionsPermanentlyDenied()){
-                            Toast.makeText(PreventionActivity.this, "Please Grant all the Permissions...", Toast.LENGTH_SHORT).show();
-                        }
-
-                    }
-                    @Override
-                    public void onPermissionsRationaleShouldBeShown(List<PermissionsRequest> permissions, PermissionToken token){
-
-                    }
-                }
-        //
-        */
-        val available = isSDCartAvailable
-        val assets = resources.assets
-        val fileName = File(
-            Environment.getExternalStorageDirectory().toString() + "/TBC/bots/TBC"
-        )
-        val makeFile = fileName.mkdirs()
-        if (fileName.exists()) {
-            //read the line
-            try {
-                for (dir in assets.list("TBC")!!) {
-                    val subDir = File(fileName.path + "/" + dir)
-                    val subDir_Check = subDir.mkdirs()
-                    for (file in assets.list("TBC/$dir")!!) {
-                        val newFile =
-                            File(fileName.path + "/" + dir + "/" + file)
-                        if (newFile.exists()) {
-                            continue
-                        }
-                        var `in`: InputStream
-                        var out: OutputStream
-                        var str: String
-                        `in` = assets.open("TBC/$dir/$file")
-                        out = FileOutputStream(fileName.path + "/" + dir + "/" + file)
-
-                        //copy files from assets to te mobile´s sd card or any secondary memory available
-                        copyFile(`in`, out)
-                        `in`.close()
-                        out.flush()
-                        out.close()
-                    }
-                }
-            } catch (e: IOException) {
-                e.printStackTrace()
-            }
-        }
-
-        //get the working directory
-        MagicStrings.root_path =
-            Environment.getExternalStorageDirectory().toString() + "/TBC"
-        AIMLProcessor.extension = PCAIMLProcessorExtension()
-        bot = Bot("TBC", MagicStrings.root_path, "chat")
-        chat = Chat(bot)
     }
 
-    @Throws(IOException::class)
-    private fun copyFile(`in`: InputStream, out: OutputStream) {
-        val buffer = ByteArray(1024)
-        var read: Int
-        while (`in`.read(buffer).also { read = it } != -1) {
-            out.write(buffer, 0, read)
-        }
+    override fun onStart() {
+        super.onStart()
+        adapter.startListening()
     }
 
-    private fun botsReply(response: String) {
-        val chatMessage = ChatMessage(false, false, response)
-        adapter!!.add(chatMessage)
+    override fun onStop() {
+        super.onStop()
+        adapter.stopListening()
+        mPresenter.onDestroy()
     }
 
-    private fun sendMessage(message: String) {
-        val chatMessage = ChatMessage(false, true, message)
-        adapter!!.add(chatMessage)
-    }
+    fun initPresenter(){
+        val aiConfiguration = AIConfiguration("391f47e5cf914bd5bbe36a167634fb28", Spanish, AIConfiguration.RecognitionEngine.System)
+            //AIConfiguration.SupportedLanguages.English,
+            //AIConfiguration.RecognitionEngine.System)
 
-    companion object {
-        var chat: Chat? = null
-        val isSDCartAvailable: Boolean
-            get() = if (Environment.getExternalStorageState() == Environment.MEDIA_MOUNTED) true else false
+        aiService = AIService.getService(this, aiConfiguration)
+        aiDataAIService = AIDataService(this,aiConfiguration)
+
+        ref = FirebaseDatabase.getInstance().reference
+
+        mPresenter = MainPresenter(aiDataAIService, ref)
+
     }
 }
