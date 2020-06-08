@@ -30,11 +30,9 @@
     </style>
 
     <style name="PreventionTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="title">"How Stay Safe"</item>
-        <item name="android:windowBackground">#D8C2F6</item>
-        <item name="colorPrimary">#863EED</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="title">"Chatbot Informativo"</item>
+        <item name="titleTextColor">#000000</item>
+        <item name="colorPrimary">#00CCEC</item>
     </style>
 
     <style name="GalleryTheme" parent="Theme.AppCompat.Light.DarkActionBar">

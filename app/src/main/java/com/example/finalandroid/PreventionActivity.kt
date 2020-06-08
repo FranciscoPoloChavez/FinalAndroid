@@ -1,40 +1,23 @@
 package com.example.finalandroid
 
-import ai.api.AIConfiguration.SupportedLanguages.English
-import ai.api.android.AIConfiguration
-import ai.api.AIConfiguration.SupportedLanguages
 import ai.api.AIConfiguration.SupportedLanguages.Spanish
+import ai.api.android.AIConfiguration
 import ai.api.android.AIDataService
 import ai.api.android.AIService
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Environment
-import android.text.TextUtils
-import android.view.View
-import android.widget.EditText
-import android.widget.ImageView
-import android.widget.ListView
+import android.widget.RelativeLayout
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.finalandroid.Adapter.ChatMessageAdapter
 import com.example.finalandroid.Model.ChatAdapter
 import com.example.finalandroid.Model.ChatMessage
 import com.example.finalandroid.Model.MainPresenter
 import com.firebase.ui.database.FirebaseRecyclerOptions
-import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
-import kotlinx.android.synthetic.main.activity_main.*
-import androidx.recyclerview.widget.RecyclerView.LayoutManager
-import kotlinx.android.synthetic.main.activity_gallery.*
 import kotlinx.android.synthetic.main.activity_gallery.view.*
 import kotlinx.android.synthetic.main.activity_prevention.*
-import kotlinx.android.synthetic.main.activity_us.view.*
-import org.alicebot.ab.*
-import java.io.*
-import java.util.ArrayList
 
 class PreventionActivity : AppCompatActivity(), MainContract.View {
 
@@ -58,9 +41,9 @@ class PreventionActivity : AppCompatActivity(), MainContract.View {
         //rvChat.recyclerview.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         //intento
 
-        //val layoutManager = LinearLayoutManager(this)
-        //layoutManager.stackFromEnd = true
-        //rvChat.layoutManager = layoutManager
+        val layoutManager = LinearLayoutManager(this)
+        layoutManager.stackFromEnd = true
+        rvChat.layoutManager = layoutManager
 
         //intento
         //val recy = findViewById<View>(R.id.rvChat) as RecyclerView
@@ -96,7 +79,7 @@ class PreventionActivity : AppCompatActivity(), MainContract.View {
 
         //rvChat.recyclerview.adapter = adapter
 
-        //rvChat.adapter = adapter
+        rvChat.adapter = adapter
 
         adapter.registerAdapterDataObserver(object : RecyclerView.AdapterDataObserver() {
             override fun onItemRangeInserted(positionStart: Int, itemCount: Int) {
@@ -106,12 +89,15 @@ class PreventionActivity : AppCompatActivity(), MainContract.View {
 
                 //Intento de cambio nosotros
                 //val lastVisiblePosition = recyclerview.findViewHolderForLayoutPosition(5)
+                //val lastVisiblePosition = RelativeLayout.findLastCompletelyVisibleItemPosition()
+                val lastVisiblePosition = rvChat.findViewHolderForLayoutPosition(msgCount)
+
 
                 //Original
                 //val lastVisiblePosition = layoutManager.findLastCompletelyVisibleItemPosition()
 
                 //if (lastVisiblePosition == -1 || positionStart >= msgCount - 1 && lastVisiblePosition == positionStart - 1) {
-                  //  rvChat.scrollToPosition(positionStart)
+                    //rvChat.scrollToPosition(positionStart)
                 //}
             }
         })
