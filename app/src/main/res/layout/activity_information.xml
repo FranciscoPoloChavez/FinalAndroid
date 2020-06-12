@@ -129,13 +129,6 @@ dedos de las manos o los pies. Estos síntomas suelen ser leves y comienzan grad
 solo presentan síntomas levísimos."
                 android:textSize="19sp" />
 
-            <ImageView
-                android:id="@+id/imagensintomas"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                app:srcCompat="@drawable/sintomas" />
-
             <TextView
                 android:id="@+id/sintromas_respuesta2"
                 android:layout_width="match_parent"
